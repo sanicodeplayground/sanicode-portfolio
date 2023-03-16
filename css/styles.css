@@ -380,9 +380,7 @@ textarea {
 .item-tech li:first-of-type {
   margin-left: 0;
 }
-.contact h2 {
-  font-size: 2rem;
-}
+
 form {
   display: flex;
   flex-direction: column;
@@ -412,6 +410,8 @@ form {
   }
   h2 {
     font-size: 5rem;
+    margin: 2rem 0;
+    line-height: 1.5;
   }
   h3 {
     font-size: 3rem;
@@ -434,12 +434,14 @@ form {
   }
   .hero-subtitle {
     font-weight: 200;
-    line-height: 1.5;
     margin: 1rem 0;
+    font-size: 4rem;
+    line-height: 1;
   }
   /* Intro */
   .about {
     flex-direction: row;
+    gap: 4rem;
   }
   .about-details ul {
     line-height: 4rem;
@@ -460,10 +462,10 @@ form {
     width: 5rem;
     height: 5rem;
   }
-  .contact h2 {
-    font-size: 3rem;
-  }
   form {
     width: 30%;
+  }
+  .footer {
+    margin-bottom: 0;
   }
 }
