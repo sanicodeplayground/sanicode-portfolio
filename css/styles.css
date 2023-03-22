@@ -1,10 +1,12 @@
-/* CSS Variables */
+ /* CSS Variables */
 
 :root {
   /* Colors */
   --background-dark: #08070b;
   --background-dark-500: #353232;
-  --background-dark-900: #1f1d24;
+  --background-header: rgba(0, 0, 0, 0.9);
+  --background-dark-700: rgba(53, 59, 65, 0.5);
+  --background-dark-900: rgba(53, 59, 65, 0.3);
   --text-light: #c7c7c7;
   --text-hover: #fe7f2d;
   --text-highlight: #abab98;
@@ -67,11 +69,10 @@ header {
   min-height: 75px;
   position: relative;
   z-index: 999;
-
   top: 0;
   padding: 0 1rem;
-  background-color: var(--background-dark);
-  border-bottom: 1px solid var(--background-dark-500);
+  background-color: var(--background-header);
+  border-bottom: 1px solid var(--background-dark);
 }
 header li {
   display: flex;
@@ -421,6 +422,7 @@ form {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   transition: var(--transition-smooth);
+  padding: 1rem 0;
 }
 .form-btn:hover {
   background-color: var(--text-hover);
@@ -432,12 +434,16 @@ textarea {
   background-color: var(--background-dark);
   border: 1px solid var(--text-highlight);
   line-height: 2rem;
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   color: var(--text-light);
   padding: 0.5rem;
   font-family: var(--font-family);
   font-size: 1rem;
+  display: block;
+  width: 100%;
 }
+
+/* Footer */
 .footer {
   margin-bottom: 0;
 }
@@ -450,16 +456,23 @@ textarea {
   flex-wrap: wrap;
   list-style: none;
   display: flex;
+  gap: 1rem;
 }
 .skills-title {
-  flex-basis: 23%;
-  margin: 10px;
-  padding: 10px;
+  flex-basis: 40%;
+  margin: 0;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--background-dark-900);
+  border-radius: 12px;
+  border: 1px solid var(--background-dark);
+  transition: var(--transition-smooth);
+}
+.skills-title:hover {
+  background-color: var(--background-dark-700);
 }
 .devicons {
   font-family: "devicons";
@@ -542,6 +555,10 @@ textarea {
   .circle-btn {
     width: 5rem;
     height: 5rem;
+  }
+  .skills-title {
+    flex-basis: 18%;
+    /* justify-content: space-between; */
   }
   form {
     width: 40%;

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Sanita Gailuma- Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/social-preview.png" />
+    <meta property="og:url" content="https://sanicodeplayground.com/" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <title>Sanita Gailuma - Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navigation">
+        <ul class="main-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="social-items">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/sgailu/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/sanicodeplayground"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="CV-web-dev-03-2023.pdf" target="_blank" aria-label="CV"
+              ><i class="fa fa-file"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="contact" id="contact-link">
+          <h2>Drop me a line</h2>
+          <form action="https://formspree.io/f/mvonboyz" method="POST">
+            <label>
+              Your email:
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required="required"
+                data-error="Email required"
+              />
+            </label>
+            <label>
+              Your message:
+              <textarea
+                name="message"
+                required="required"
+                cols="46"
+                rows="3"
+                name="Comments"
+                placeholder="I need a front-end developer"
+              ></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit" class="form-btn">Shoot →</button>
+          </form>
+          <!-- <form action="contact.php" method="post" id="form">
+            <label for="name">Your name</label>
+            <input
+              type="text"
+              name="First_name"
+              placeholder="Enter your name"
+              required="required"
+              data-error="Name required"
+            />
+
+            <label for="email">Your email</label>
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              placeholder="Enter your email address"
+              required="required"
+              data-error="Email required"
+            />
+
+            <label for="message">Your message</label>
+            <textarea
+              cols="46"
+              rows="3"
+              name="Comments"
+              placeholder="I need a front-end developer"
+            ></textarea>
+
+            <label for="submit"></label>
+            <input type="submit" id="submit" value="Shoot →" class="form-btn" />
+          </form> -->
+        </div>
+      </section>
+
+      <footer class="section footer">
+        <p>Sani © 2023 • Build with love in Bristol</p>
+      </footer>
+    </main>
+  </body>
+</html>

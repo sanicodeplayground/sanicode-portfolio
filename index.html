@@ -35,9 +35,9 @@
     <header>
       <nav class="navigation">
         <ul class="main-menu">
-          <li><a href="#about-link">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#portfolio-link">Portfolio</a></li>
-          <li><a href="#contact-link">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <ul class="social-items">
           <li>
@@ -49,16 +49,16 @@
             ></a>
           </li>
           <li>
-            <a href="CV-web-dev-03-2023.pdf" target="_blank" aria-label="CV"
-              ><i class="fa fa-file"></i
-            ></a>
-          </li>
-          <li>
             <a
               href="https://github.com/sanicodeplayground"
               target="_blank"
               aria-label="GitHub"
               ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="CV-web-dev-03-2023.pdf" target="_blank" aria-label="CV"
+              ><i class="fa fa-file"></i
             ></a>
           </li>
         </ul>
@@ -185,7 +185,7 @@
           </div>
         </div>
       </section>
-
+<!--
       <section class="section about-section">
         <div class="about" id="about-link">
           <div class="about-image">
@@ -316,7 +316,32 @@
       <section class="section">
         <div class="contact" id="contact-link">
           <h2>Drop me a line</h2>
-          <form action="contact.php" method="post" id="form">
+          <form action="https://formspree.io/f/mvonboyz" method="POST">
+            <label>
+              Your email:
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required="required"
+                data-error="Email required"
+              />
+            </label>
+            <label>
+              Your message:
+              <textarea
+                name="message"
+                required="required"
+                cols="46"
+                rows="3"
+                name="Comments"
+                placeholder="I need a front-end developer"
+              ></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <!--<button type="submit" class="form-btn">Shoot →</button> -->
+          </form>
+          <!-- <form action="contact.php" method="post" id="form">
             <label for="name">Your name</label>
             <input
               type="text"
@@ -346,16 +371,16 @@
 
             <label for="submit"></label>
             <input type="submit" id="submit" value="Shoot →" class="form-btn" />
-          </form>
+          </form> -->
         </div>
       </section>
-
+    
       <footer class="section footer">
         <p>Sani © 2023 • Build with love in Bristol</p>
       </footer>
     </main>
 
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
@@ -375,6 +400,6 @@
       integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
       crossorigin="anonymous"
     ></script>
-    <script src="js/contact.js"></script>
+    <script src="js/contact.js"></script> -->
   </body>
 </html>
