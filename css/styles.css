@@ -1,4 +1,4 @@
- /* CSS Variables */
+/* CSS Variables */
 
 :root {
   /* Colors */
@@ -53,11 +53,13 @@ h4 {
 /* Paragraphs and links */
 p {
   font-size: 1rem;
+  line-height: 1.5;
   margin: 0.5rem 0;
 }
 a {
   color: var(--text-light);
-  text-decoration: none;
+  text-decoration: underline;
+  line-height: 1.5;
 }
 
 /* Header Styles */
@@ -540,6 +542,9 @@ textarea {
   .about-details ul {
     line-height: 3rem;
     font-size: 1.5rem;
+  }
+  .about-details-expanded {
+    width: 60%;
   }
   .section {
     margin: 7rem;
