@@ -8,7 +8,7 @@
   --background-dark-700: rgba(53, 59, 65, 0.5);
   --background-dark-900: rgba(53, 59, 65, 0.3);
   --text-light: #c7c7c7;
-  --text-hover: #fe7f2d;
+  --text-hover-and-headings: #fe7f2d;
   --text-highlight: #abab98;
 
   /* Font family*/
@@ -107,7 +107,7 @@ header li {
   transition: var(--transition-smooth);
 }
 .main-menu a:hover {
-  color: var(--text-hover);
+  color: var(--text-hover-and-headings);
 }
 
 /* Main Content */
@@ -375,7 +375,7 @@ main {
   transition: var(--transition-smooth);
 }
 .portfolio-item a:hover {
-  color: var(--text-hover);
+  color: var(--text-hover-and-headings);
 }
 .item-title-container {
   display: flex;
@@ -427,7 +427,7 @@ form {
   padding: 1rem 0;
 }
 .form-btn:hover {
-  background-color: var(--text-hover);
+  background-color: var(--text-hover-and-headings);
 }
 
 /* Form Input Styles */
@@ -443,6 +443,13 @@ textarea {
   font-size: 1rem;
   display: block;
   width: 100%;
+}
+
+/*About and Contact heading*/
+.about h2,
+.skills h2,
+.contact h2 {
+  color: var(--text-hover-and-headings);
 }
 
 /* Footer */
@@ -492,6 +499,7 @@ textarea {
 .skills-title span {
   font-size: 3rem;
 }
+
 /* Large screens */
 
 @media all and (min-width: 900px) {
@@ -499,7 +507,7 @@ textarea {
     font-size: 6rem;
   }
   h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin: 2rem 0;
     line-height: 1.5;
   }
@@ -520,7 +528,8 @@ textarea {
     padding: 0 5rem;
   }
   .hero-title {
-    font-size: clamp(3rem, 25vmin, 8rem);
+    font-size: clamp(3rem, 25vmin, 5.5rem);
+    /*font-size: clamp(3rem, 25vmin, 8rem);*/
     margin: 1rem 0 0.5rem 0;
   }
   .hero-subtitle {
