@@ -1,18 +1,51 @@
+/* Custom font */
+@font-face {
+  font-family: 'Priego';
+  src: url('/fonts/priego-regular.woff2') format('woff2'),
+       url('/fonts/priego-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Priego';
+  src: url('/fonts/priego-semi-bold-regular.woff2') format('woff2'),
+       url('/fonts/priego-semi-bold-regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Priego';
+  src: url('/fonts/priego-bold-regular.woff2') format('woff2'),
+       url('/fonts/priego-bold-regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* CSS Variables */
 
 :root {
-  /* Colors */
+  
+  /* Light color theme variables */
+  --background-light: #08070b;
+
+  /* Dark color theme variables */
   --background-dark: #08070b;
   --background-dark-500: #353232;
   --background-header: rgba(0, 0, 0, 0.9);
   --background-dark-700: rgba(53, 59, 65, 0.5);
   --background-dark-900: rgba(53, 59, 65, 0.3);
   --text-light: #c7c7c7;
-  --text-hover-and-headings: #fe7f2d;
   --text-highlight: #abab98;
 
+  /* Neutral color variables */
+  --text-hover-and-headings: #fe7f2d;
+
   /* Font family*/
-  --font-family: "Inter", sans-serif;
+  --font-family-header: 'Priego', 'Inter', sans-serif;
+  --font-family-text: 'Inter', sans-serif;
 
   /* Transitions */
   --transition-smooth: all 0.47s ease-in-out;
@@ -27,7 +60,7 @@
 body {
   background-color: var(--background-dark);
   color: var(--text-light);
-  font-family: var(--font-family);
+  font-family: var(--font-family-text);
   min-height: 100vh;
   scroll-behavior: smooth;
 }
@@ -36,6 +69,10 @@ img {
 }
 
 /* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: var(--font-family-header);
+}
 h1 {
   font-size: 4.5rem;
 }
@@ -91,7 +128,6 @@ header li {
 .social-items {
   list-style: none;
   display: flex;
-
   gap: 1rem;
 }
 .social-items a {
@@ -105,6 +141,7 @@ header li {
 .main-menu a {
   text-decoration: none;
   transition: var(--transition-smooth);
+  font-weight: 600;
 }
 .main-menu a:hover {
   color: var(--text-hover-and-headings);
@@ -143,12 +180,11 @@ main {
   flex-direction: column;
 }
 .hero-intro {
-  font-weight: 200;
+  font-weight: normal;
   margin: 1rem 0;
 }
 .hero-title {
   font-size: clamp(4rem, 25vmin, 1rem);
-  font-weight: 700;
   line-height: 1;
   margin: 1rem 0;
   --color-one: hsl(15 90% 55%);
@@ -174,7 +210,7 @@ main {
 
 .hero-subtitle {
   font-size: 2.5rem;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 1.5;
   margin: 0 0 2rem 0;
 }
@@ -439,7 +475,7 @@ textarea {
   margin: 1rem 0 1rem 0;
   color: var(--text-light);
   padding: 0.5rem;
-  font-family: var(--font-family);
+  font-family: var(--font-family-text);
   font-size: 1rem;
   display: block;
   width: 100%;
@@ -529,11 +565,9 @@ textarea {
   }
   .hero-title {
     font-size: clamp(3rem, 25vmin, 5.5rem);
-    /*font-size: clamp(3rem, 25vmin, 8rem);*/
     margin: 1rem 0 0.5rem 0;
   }
   .hero-subtitle {
-    font-weight: 200;
     margin: 1rem 0 4rem 0;
     font-size: 4rem;
     line-height: 1;
