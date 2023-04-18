@@ -35,7 +35,7 @@
   --background-dark: #08070b;
   --background-dark-500: #353232;
   --background-header: rgba(0, 0, 0, 0.9);
-  --background-dark-700: rgba(53, 59, 65, 0.5);
+  --background-dark-700: rgba(53, 59, 65, 0.9);
   --background-dark-900: rgba(53, 59, 65, 0.3);
   --text-light: #c7c7c7;
   --text-highlight: #abab98;
@@ -518,6 +518,7 @@ textarea {
 }
 .skills-title:hover {
   background-color: var(--background-dark-700);
+  border: 1px solid var(--text-hover-and-headings);
 }
 .devicons {
   font-family: "devicons";
@@ -579,7 +580,7 @@ textarea {
     gap: 4rem;
   }
   .about-image {
-    width: 30%;
+    width: 20%;
     margin: 0;
   }
   .about-details ul {
