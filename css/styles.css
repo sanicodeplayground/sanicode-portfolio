@@ -1,24 +1,24 @@
 /* Custom font */
 @font-face {
-  font-family: 'Priego';
-  src: url('/fonts/priego-regular.woff2') format('woff2'),
-       url('/fonts/priego-regular.woff') format('woff');
+  font-family: "Priego";
+  src: url("/fonts/priego-regular.woff2") format("woff2"),
+    url("/fonts/priego-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Priego';
-  src: url('/fonts/priego-semi-bold-regular.woff2') format('woff2'),
-       url('/fonts/priego-semi-bold-regular.woff') format('woff');
+  font-family: "Priego";
+  src: url("/fonts/priego-semi-bold-regular.woff2") format("woff2"),
+    url("/fonts/priego-semi-bold-regular.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Priego';
-  src: url('/fonts/priego-bold-regular.woff2') format('woff2'),
-       url('/fonts/priego-bold-regular.woff') format('woff');
+  font-family: "Priego";
+  src: url("/fonts/priego-bold-regular.woff2") format("woff2"),
+    url("/fonts/priego-bold-regular.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,6 @@
 /* CSS Variables */
 
 :root {
-  
   /* Light color theme variables */
   --background-light: #08070b;
 
@@ -44,8 +43,8 @@
   --text-hover-and-headings: #fe7f2d;
 
   /* Font family*/
-  --font-family-header: 'Priego', 'Inter', sans-serif;
-  --font-family-text: 'Inter', sans-serif;
+  --font-family-header: "Priego", "Inter", sans-serif;
+  --font-family-text: "Inter", sans-serif;
 
   /* Transitions */
   --transition-smooth: all 0.47s ease-in-out;
@@ -69,7 +68,12 @@ img {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   font-family: var(--font-family-header);
 }
@@ -97,6 +101,9 @@ a {
   color: var(--text-light);
   text-decoration: underline;
   line-height: 1.5;
+}
+ul {
+  list-style: none;
 }
 
 /* Header Styles */
@@ -172,6 +179,11 @@ main {
   line-height: 2rem;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+.my-photos .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 /* Hero Section */
@@ -589,6 +601,32 @@ textarea {
   }
   .about-details-expanded {
     width: 60%;
+  }
+  .photos-wrapper {
+    display: grid;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .my-photos .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+      "photo-1 photo-2"
+      "photo-1 photo-5";
+  }
+  .grid-container {
+    justify-content: space-evenly;
+  }
+  .photo-1 {
+    grid-area: photo-1;
+  }
+  .photo-2 {
+    grid-area: photo-2;
+  }
+  .photo-5 {
+    grid-area: photo-5;
   }
   .section {
     margin: 7rem;
