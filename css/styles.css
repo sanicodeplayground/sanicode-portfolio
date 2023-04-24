@@ -610,23 +610,27 @@ textarea {
   }
   .my-photos .grid-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 0.5rem;
-    grid-template-areas:
-      "photo-1 photo-2"
-      "photo-1 photo-5";
+    /*grid-template-rows:
+      /*[header-top] 1fr
+      [header-bottom main-top] 1fr
+      [main-bottom footer-top] 1fr
+      [footer-bottom];
+      */
+
+    gap: 0.5rem;
   }
   .grid-container {
     justify-content: space-evenly;
   }
   .photo-1 {
-    grid-area: photo-1;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
   .photo-2 {
-    grid-area: photo-2;
+    grid-column: 2;
   }
   .photo-5 {
-    grid-area: photo-5;
+    grid-column: 2;
   }
   .section {
     margin: 7rem;
