@@ -412,6 +412,7 @@ main {
   gap: 3rem;
   margin-bottom: 3rem;
 }
+
 .portfolio-item img {
   border-radius: 0.5rem;
   transition: var(--transition-smooth);
@@ -549,7 +550,7 @@ textarea {
   font-size: 3rem;
 }
 
-/* Large screens */
+/* Large screens Media Queries */
 
 @media all and (min-width: 900px) {
   h1 {
@@ -610,13 +611,6 @@ textarea {
   }
   .my-photos .grid-container {
     grid-template-columns: 1fr 1fr;
-    /*grid-template-rows:
-      /*[header-top] 1fr
-      [header-bottom main-top] 1fr
-      [main-bottom footer-top] 1fr
-      [footer-bottom];
-      */
-
     gap: 0.5rem;
   }
   .grid-container {
@@ -639,6 +633,9 @@ textarea {
     flex-direction: row;
     gap: 3rem;
     margin-bottom: 3rem;
+  }
+  .portfolio-item {
+  flex: 1 1 0;
   }
   .item-tech li {
     padding: 0.4rem 0.6rem;
