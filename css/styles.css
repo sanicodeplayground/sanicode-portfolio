@@ -83,6 +83,7 @@ h1 {
 h2 {
   font-size: 3rem;
   margin: 1rem 0 1.5rem 0;
+  color: var(--text-hover-and-headings);
 }
 h3 {
   font-size: 2rem;
@@ -180,12 +181,6 @@ main {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-.my-photos .grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-}
-
 /* Hero Section */
 .hero {
   display: flex;
@@ -494,13 +489,6 @@ textarea {
   width: 100%;
 }
 
-/*About and Contact heading*/
-.about h2,
-.skills h2,
-.contact h2 {
-  color: var(--text-hover-and-headings);
-}
-
 /* Footer */
 .footer {
   margin-bottom: 0;
@@ -509,15 +497,13 @@ textarea {
   color: var(--text-light);
 }
 
-/* Skills */
-.skills-container {
-  flex-wrap: wrap;
-  list-style: none;
-  display: flex;
+/* Skills and Tools  Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 .skills-title {
-  flex-basis: 40%;
   margin: 0;
   padding: 1.5rem 1rem;
   display: flex;
@@ -542,7 +528,7 @@ textarea {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.skills p {
+.skills-title p {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -550,7 +536,28 @@ textarea {
   font-size: 3rem;
 }
 
-/* Large screens Media Queries */
+/* My Photos */
+.grid-3  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.grid-3 .grid-photos img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: var(--transition-smooth);
+ }
+ .grid-3 .grid-photos {
+  overflow: hidden;
+ }
+ .grid-3 .grid-photos:hover img {
+  filter: none
+ }
+
+/* ---------- Large screens Media Queries ----------- */
 
 @media all and (min-width: 900px) {
   h1 {
@@ -603,28 +610,15 @@ textarea {
   .about-details-expanded {
     width: 60%;
   }
-  .photos-wrapper {
-    display: grid;
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .my-photos .grid-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-  }
   .grid-container {
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  .photo-1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
+  /* My Photos */
+  .grid-3  {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
-  .photo-2 {
-    grid-column: 2;
-  }
-  .photo-5 {
-    grid-column: 2;
+  .grid-photos:first-child {
+    
   }
   .section {
     margin: 7rem;
@@ -644,10 +638,7 @@ textarea {
     width: 5rem;
     height: 5rem;
   }
-  .skills-title {
-    flex-basis: 18%;
-    /* justify-content: space-between; */
-  }
+  
   form {
     width: 40%;
   }
