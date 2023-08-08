@@ -41,25 +41,17 @@
         </ul>
         <ul class="social-items">
           <li>
-            <a
-              href="https://www.linkedin.com/in/sgailu/"
-              target="_blank"
-              aria-label="LinkedIn"
+            <a href="https://www.linkedin.com/in/sgailu/" target="_blank" aria-label="LinkedIn"
               ><i class="fa fa-linkedin"></i
             ></a>
           </li>
           <li>
-            <a
-              href="https://github.com/sanicodeplayground"
-              target="_blank"
-              aria-label="GitHub"
+            <a href="https://github.com/sanicodeplayground" target="_blank" aria-label="GitHub"
               ><i class="fa fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="CV-web-dev-03-2023.pdf" target="_blank" aria-label="CV"
-              ><i class="fa fa-file"></i
-            ></a>
+            <a href="CV.pdf" target="_blank" aria-label="CV"><i class="fa fa-file"></i></a>
           </li>
         </ul>
       </nav>
@@ -73,11 +65,7 @@
           <h2 class="hero-subtitle">FrontEnd Developer</h2>
         </div>
         <div class="arrow-container">
-          <a
-            href="#portfolio-link"
-            class="scroll-to-portfolio"
-            aria-label="Scroll to Portfolio"
-          >
+          <a href="#portfolio-link" class="scroll-to-portfolio" aria-label="Scroll to Portfolio">
             <div class="circle-btn btn-1 effect-2">
               <span class="icon" aria-hidden="true">
                 <i class="fa fa-long-arrow-down"></i>
@@ -87,33 +75,83 @@
           </a>
         </div>
       </section>
-
+      <!-- Portfolio list -->
       <section class="section">
         <div class="portfolio" id="portfolio-link">
           <h2>Portfolio</h2>
 
           <div class="portfolio-items">
-            <!--Item Age Calculator-->
+            <!-- Item Connou website-->
             <div class="portfolio-item">
-              <a
-                href="https://sanicodeplayground.github.io/age-calculator/"
-                target="_blank"
-              >
-                <img src="img/portfolio-age.png" alt="Age calculator" />
+              <a href="https://connou.app/" target="_blank">
+                <img src="img/portfolio-connou-app.png" alt="connou website to connect students" />
               </a>
               <div class="item-title-container">
-                <h3 class="item-title">Age Calculator</h3>
-                <a
+                <h3 class="item-title">Full time developer at Connou</h3>
+                <!-- <a
                   href="https://github.com/sanicodeplayground/age-calculator"
                   target="_blank"
+                  >View code</a
+                > -->
+              </div>
+              <p class="item-description">
+                As a FrontEnd developer at Connou I'm working on the web application. My role is to
+                build a responsive web application, handle the logic of the pages, ensure its proper
+                functionality, debug any issues, and write unit tests. Most of the time I'm using
+                typescript and react.
+              </p>
+              <ul class="item-tech">
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Docker</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+
+            <!-- Item Cleaning service -->
+            <div class="portfolio-item">
+              <a href="https://sanicodeplayground.github.io/cleaning-services/" target="_blank">
+                <img src="img/portfolio-sarah-cleans.png" alt="landing page of cleaning services" />
+              </a>
+              <div class="item-title-container">
+                <h3 class="item-title">Cleaning services landing page</h3>
+                <a href="https://codesandbox.io/s/cleaning-services-ie9suy" target="_blank"
                   >View code</a
                 >
               </div>
               <p class="item-description">
-                The goal of this project is to develop an interactive web
-                application that calculates and displays a user's age in years,
-                months, and days. Utilize JavaScript to handle the logic behind
-                calculating the age from the user's DOB to the current date.
+                The objective of this project was to design and implement a user-friendly website
+                for Sarah. CSS media queries were used to make the website responsive. It ensures
+                optimal viewing across a variety of devices, including desktops, tablets, and mobile
+                devices. Accessibility: The website was designed with accessibility in mind, using
+                semantic HTML and ARIA roles for better screen reader support.
+              </p>
+              <ul class="item-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Form</li>
+                <li>Accessibility</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="portfolio-items">
+            <!--Item Age Calculator-->
+            <div class="portfolio-item">
+              <a href="https://sanicodeplayground.github.io/age-calculator/" target="_blank">
+                <img src="img/portfolio-age.png" alt="Age calculator" />
+              </a>
+              <div class="item-title-container">
+                <h3 class="item-title">Age Calculator</h3>
+                <a href="https://github.com/sanicodeplayground/age-calculator" target="_blank"
+                  >View code</a
+                >
+              </div>
+              <p class="item-description">
+                The goal of this project is to develop an interactive web application that
+                calculates and displays a user's age in years, months, and days. Utilize JavaScript
+                to handle the logic behind calculating the age from the user's DOB to the current
+                date.
               </p>
               <ul class="item-tech">
                 <li>HTML</li>
@@ -124,32 +162,24 @@
 
             <!--Item BMI-->
             <div class="portfolio-item">
-              <a
-                href="https://sanicodeplayground.github.io/bmi-calculator/"
-                target="_blank"
-              >
+              <a href="https://sanicodeplayground.github.io/bmi-calculator/" target="_blank">
                 <img src="img/portfolio-bmi@2x.jpeg" alt="BMI calculator" />
               </a>
               <div class="item-title-container">
                 <h3 class="item-title">BMI Calculator</h3>
-                <a
-                  href="https://github.com/sanicodeplayground/bmi-calculator"
-                  target="_blank"
+                <a href="https://github.com/sanicodeplayground/bmi-calculator" target="_blank"
                   >View code</a
                 >
               </div>
               <p class="item-description">
-                The goal of this project is to create a responsive,
-                user-friendly web application that allows users to calculate
-                their BMI. There are two input fields, one for weight (in
-                kilograms) and another for height (in centimeters). A
-                "Calculate" button that the user can click to trigger the action
-                and a display area for the results. Write JavaScript (or another
-                suitable language if applicable) to handle user input and
-                calculate the BMI. The formula for calculating BMI is weight
-                (kg) / [height (m)]^2. After the calculation, it classifies the
-                result into the appropriate BMI category: Underweight, Normal,
-                or Overweight.
+                The goal of this project is to create a responsive, user-friendly web application
+                that allows users to calculate their BMI. There are two input fields, one for weight
+                (in kilograms) and another for height (in centimeters). A "Calculate" button that
+                the user can click to trigger the action and a display area for the results. Write
+                JavaScript (or another suitable language if applicable) to handle user input and
+                calculate the BMI. The formula for calculating BMI is weight (kg) / [height (m)]^2.
+                After the calculation, it classifies the result into the appropriate BMI category:
+                Underweight, Normal, or Overweight.
               </p>
               <ul class="item-tech">
                 <li>CSS</li>
@@ -159,110 +189,25 @@
           </div>
 
           <div class="portfolio-items">
-            <!-- Item Cleaning service -->
-            <div class="portfolio-item">
-              <a
-                href="https://sanicodeplayground.github.io/cleaning-services/"
-                target="_blank"
-              >
-                <img
-                  src="img/portfolio-sarah-cleans.png"
-                  alt="landing page of cleaning services"
-                />
-              </a>
-              <div class="item-title-container">
-                <h3 class="item-title">Cleaning services landing page</h3>
-                <a
-                  href="https://codesandbox.io/s/cleaning-services-ie9suy"
-                  target="_blank"
-                  >View code</a
-                >
-              </div>
-              <p class="item-description">
-                The objective of this project was to design and implement a
-                user-friendly website for Sarah, a professional cleaner offering
-                services in East Bristol. The website presents comprehensive
-                information about Sarah's cleaning services, her background,
-                rates, and a method to contact her. CSS media queries were used
-                to make the website responsive. It ensures optimal viewing
-                across a variety of devices, including desktops, tablets, and
-                mobile devices. Accessibility: The website was designed with
-                accessibility in mind, using semantic HTML and ARIA roles for
-                better screen reader support.
-              </p>
-              <ul class="item-tech">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Form</li>
-                <li>Accessibility</li>
-              </ul>
-            </div>
-
-            <!--Item 2-->
-            <div class="portfolio-item">
-              <a
-                href="https://sanicodeplayground.github.io/social-proof-section/"
-                target="_blank"
-              >
-                <img
-                  src="img/portfolio-social-proof.png"
-                  alt="Social Proof Section"
-                />
-              </a>
-              <div class="item-title-container">
-                <h3 class="item-title">Social Proof Section</h3>
-                <a
-                  href="https://codesandbox.io/s/social-proof-section-jcgovx"
-                  target="_blank"
-                  >View code</a
-                >
-              </div>
-              <p class="item-description">
-                The primary objective of this project was to create a static
-                "social proof" section of a website showcasing user reviews and
-                satisfaction ratings. The section highlights user satisfaction
-                ratings from three different platforms and displays user reviews
-                to increase user trust and product value perception.
-              </p>
-              <ul class="item-tech">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Responsive</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="portfolio-items">
             <!--Item 3-->
             <div class="portfolio-item">
-              <a
-                href="https://sanicodeplayground.github.io/little-lemon-project/"
-                target="_blank"
-              >
-                <img
-                  src="img/portfolio1@2x.png"
-                  alt="Portfolio Little Lemon restaurant"
-                />
+              <a href="https://sanicodeplayground.github.io/little-lemon-project/" target="_blank">
+                <img src="img/portfolio1@2x.png" alt="Portfolio Little Lemon restaurant" />
               </a>
               <div class="item-title-container">
                 <h3 class="item-title">Little Lemon Website</h3>
-                <a
-                  href="https://github.com/sanicodeplayground/little-lemon-project"
-                  target="_blank"
+                <a href="https://github.com/sanicodeplayground/little-lemon-project" target="_blank"
                   >View code</a
                 >
               </div>
               <p class="item-description">
-                The primary aim of this project was to build an informative
-                website for a Mediterranean restaurant named "Little Lemon." The
-                website provides an overview of the restaurant's cuisine, brief
-                descriptions of selected dishes, and information about the
-                restaurant's history and origins. SEO and Accessibility: The
-                website has been built with a focus on SEO and accessibility.
-                The meta description tag, alt attributes for images, meaningful
-                structure, and appropriate use of HTML elements enhance the
-                site's visibility to search engines and accessibility to all
-                users.
+                The primary aim of this project was to build an informative website for a
+                Mediterranean restaurant named "Little Lemon." The website provides an overview of
+                the restaurant's cuisine, brief descriptions of selected dishes, and information
+                about the restaurant's history and origins. SEO and Accessibility: The website has
+                been built with a focus on SEO and accessibility. The meta description tag, alt
+                attributes for images, meaningful structure, and appropriate use of HTML elements
+                enhance the site's visibility to search engines and accessibility to all users.
               </p>
               <ul class="item-tech">
                 <li>HTML5</li>
@@ -277,16 +222,14 @@
               </a>
               <div class="item-title-container">
                 <h3 class="item-title">Educational Magazine</h3>
-                <a
-                  href="https://codesandbox.io/s/magazine-with-grids-cd7jdr"
-                  target="_blank"
+                <a href="https://codesandbox.io/s/magazine-with-grids-cd7jdr" target="_blank"
                   >View code</a
                 >
               </div>
               <p class="item-description">
-                It's a responsive HTML5 and CSS3 webpage, designed to provide
-                readers with clear, engaging information about freeCodeCamp's
-                evolution and commitment to project-driven learning.
+                It's a responsive HTML5 and CSS3 webpage, designed to provide readers with clear,
+                engaging information about freeCodeCamp's evolution and commitment to project-driven
+                learning.
               </p>
               <ul class="item-tech">
                 <li>HTML5</li>
@@ -299,27 +242,18 @@
             <!--Item 5-->
             <div class="portfolio-item">
               <a href="https://0eg9u9.csb.app/" target="_blank">
-                <img
-                  src="img/portfolio3@2x.png"
-                  alt="landing page of online payments"
-                />
+                <img src="img/portfolio3@2x.png" alt="landing page of online payments" />
               </a>
               <div class="item-title-container">
-                <h3 class="item-title">
-                  Upay: Online Payment Solution Landing Page
-                </h3>
-                <a href="https://codesandbox.io/s/upay-0eg9u9" target="_blank"
-                  >View code</a
-                >
+                <h3 class="item-title">Upay: Online Payment Solution Landing Page</h3>
+                <a href="https://codesandbox.io/s/upay-0eg9u9" target="_blank">View code</a>
               </div>
               <p class="item-description">
-                An online payment solution designed for small businesses and
-                freelancers. The landing page was designed to be fully
-                responsive, catering to various device sizes, including
-                desktops, tablets, and mobile devices. This was achieved using
-                CSS media queries or a CSS framework that supports
-                responsiveness. JavaScript was used to add interactivity to the
-                landing page. This includes form validations, event handling,
+                An online payment solution designed for small businesses and freelancers. The
+                landing page was designed to be fully responsive, catering to various device sizes,
+                including desktops, tablets, and mobile devices. This was achieved using CSS media
+                queries or a CSS framework that supports responsiveness. JavaScript was used to add
+                interactivity to the landing page. This includes form validations, event handling,
                 and user interactions such as hover effects.
               </p>
               <ul class="item-tech">
@@ -328,30 +262,20 @@
             </div>
             <!--Item 6-->
             <div class="portfolio-item">
-              <a
-                href="https://sanicodeplayground.github.io/simple-to-do-app/"
-                target="_blank"
-              >
-                <img
-                  src="img/portfolio-shopping-listapp.png"
-                  alt="shopping list"
-                />
+              <a href="https://sanicodeplayground.github.io/simple-to-do-app/" target="_blank">
+                <img src="img/portfolio-shopping-listapp.png" alt="shopping list" />
               </a>
               <div class="item-title-container">
                 <h3 class="item-title">Shopping List</h3>
-                <a
-                  href="https://codesandbox.io/s/shopping-list-app-gg97fo"
-                  target="_blank"
+                <a href="https://codesandbox.io/s/shopping-list-app-gg97fo" target="_blank"
                   >View code</a
                 >
               </div>
               <p class="item-description">
-                The goal of this project is to create a responsive,
-                user-friendly web application that allows users to create and
-                delete their shopping list. There is an input field for add a
-                new item, an "Add" button for adding the new item to the list. A
-                list of items, where each task has an option to be deleted if
-                it's not needed.
+                The goal of this project is to create a responsive, user-friendly web application
+                that allows users to create and delete their shopping list. There is an input field
+                for add a new item, an "Add" button for adding the new item to the list. A list of
+                items, where each task has an option to be deleted if it's not needed.
               </p>
               <ul class="item-tech">
                 <li>ReactJS</li>
