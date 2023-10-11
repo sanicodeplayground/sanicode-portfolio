@@ -81,18 +81,13 @@
           <h2>Portfolio</h2>
 
           <div class="portfolio-items">
-            <!-- Item Connou website-->
+            <!-- Item 1 Connou website-->
             <div class="portfolio-item">
               <a href="https://connou.app/" target="_blank">
                 <img src="img/portfolio-connou-app.png" alt="connou website to connect students" />
               </a>
               <div class="item-title-container">
                 <h3 class="item-title">Full time developer at Connou</h3>
-                <!-- <a
-                  href="https://github.com/sanicodeplayground/age-calculator"
-                  target="_blank"
-                  >View code</a
-                > -->
               </div>
               <p class="item-description">
                 As a FrontEnd developer at Connou I'm working on the web application. My role is to
@@ -108,7 +103,34 @@
               </ul>
             </div>
 
-            <!-- Item Cleaning service -->
+            <!-- Item 2 Todo List App -->
+            <div class="portfolio-item">
+              <a href="https://todo-list-app-92j8.onrender.com/" target="_blank">
+                <img src="img/portfolio-todo-list.png" alt="daily and work list" />
+              </a>
+              <div class="item-title-container">
+                <h3 class="item-title">Age Calculator</h3>
+                <a href="https://github.com/sanicodeplayground/todo-app" target="_blank"
+                  >View code</a
+                >
+              </div>
+              <p class="item-description">
+                A dynamic web application built with Node.js and Express, featuring a user-friendly
+                interface rendered with EJS templates. This project allows users to manage their
+                daily tasks efficiently, offering features such as task addition, deletion, and
+                status updates. Deployed on Hostinger, it showcases the integration of backend logic
+                with frontend interactivity, providing a seamless user experience.
+              </p>
+              <ul class="item-tech">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>EJS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="portfolio-items">
+            <!-- Item 3 Cleaning service -->
             <div class="portfolio-item">
               <a href="https://sanicodeplayground.github.io/cleaning-services/" target="_blank">
                 <img src="img/portfolio-sarah-cleans.png" alt="landing page of cleaning services" />
@@ -133,10 +155,8 @@
                 <li>Accessibility</li>
               </ul>
             </div>
-          </div>
 
-          <div class="portfolio-items">
-            <!--Item Age Calculator-->
+            <!--Item 4 Age Calculator-->
             <div class="portfolio-item">
               <a href="https://sanicodeplayground.github.io/age-calculator/" target="_blank">
                 <img src="img/portfolio-age.png" alt="Age calculator" />
@@ -159,8 +179,10 @@
                 <li>CSS</li>
               </ul>
             </div>
+          </div>
 
-            <!--Item BMI-->
+          <div class="portfolio-items">
+            <!--Item 5 BMI-->
             <div class="portfolio-item">
               <a href="https://sanicodeplayground.github.io/bmi-calculator/" target="_blank">
                 <img src="img/portfolio-bmi@2x.jpeg" alt="BMI calculator" />
@@ -175,21 +197,19 @@
                 The goal of this project is to create a responsive, user-friendly web application
                 that allows users to calculate their BMI. There are two input fields, one for weight
                 (in kilograms) and another for height (in centimeters). A "Calculate" button that
-                the user can click to trigger the action and a display area for the results. Write
-                JavaScript (or another suitable language if applicable) to handle user input and
-                calculate the BMI. The formula for calculating BMI is weight (kg) / [height (m)]^2.
-                After the calculation, it classifies the result into the appropriate BMI category:
-                Underweight, Normal, or Overweight.
+                the user can click to trigger the action and a display area for the results.
+                JavaScript is used to handle user input and calculate the BMI. The formula for
+                calculating BMI is weight (kg) / [height (m)]^2. After the calculation, it
+                classifies the result into the appropriate BMI category: Underweight, Normal, or
+                Overweight.
               </p>
               <ul class="item-tech">
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
             </div>
-          </div>
 
-          <div class="portfolio-items">
-            <!--Item 3-->
+            <!--Item 6 Little Lemon -->
             <div class="portfolio-item">
               <a href="https://sanicodeplayground.github.io/little-lemon-project/" target="_blank">
                 <img src="img/portfolio1@2x.png" alt="Portfolio Little Lemon restaurant" />
@@ -215,31 +235,10 @@
                 <li>Forms</li>
               </ul>
             </div>
-            <!--Item 4-->
-            <div class="portfolio-item">
-              <a href="https://cd7jdr.csb.app/" target="_blank">
-                <img src="img/portfolio2@2x.png" alt="magazine" />
-              </a>
-              <div class="item-title-container">
-                <h3 class="item-title">Educational Magazine</h3>
-                <a href="https://codesandbox.io/s/magazine-with-grids-cd7jdr" target="_blank"
-                  >View code</a
-                >
-              </div>
-              <p class="item-description">
-                It's a responsive HTML5 and CSS3 webpage, designed to provide readers with clear,
-                engaging information about freeCodeCamp's evolution and commitment to project-driven
-                learning.
-              </p>
-              <ul class="item-tech">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>CSS Grid</li>
-              </ul>
-            </div>
           </div>
+
           <div class="portfolio-items">
-            <!--Item 5-->
+            <!--Item 7 UPay -->
             <div class="portfolio-item">
               <a href="https://0eg9u9.csb.app/" target="_blank">
                 <img src="img/portfolio3@2x.png" alt="landing page of online payments" />
@@ -260,7 +259,7 @@
                 <li>Bootstrap</li>
               </ul>
             </div>
-            <!--Item 6-->
+            <!--Item 8 Shopping List -->
             <div class="portfolio-item">
               <a href="https://sanicodeplayground.github.io/simple-to-do-app/" target="_blank">
                 <img src="img/portfolio-shopping-listapp.png" alt="shopping list" />
@@ -287,7 +286,13 @@
       </section>
     </main>
     <footer class="section footer">
-      <p>Sani © 2023 • Built with love in Bristol</p>
+      <p>Sani © <span id="year"></span> • Built with love in Bristol</p>
     </footer>
+
+    <!-- Include Qjuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Link to JS file -->
+    <script src="/script.js" charset="UTF-8"></script>
   </body>
 </html>

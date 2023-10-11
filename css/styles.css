@@ -197,13 +197,8 @@ main {
   --color-one: hsl(15 90% 55%);
   --color-two: hsl(40 95% 55%);
   --bg-size: 400%;
-  background: linear-gradient(
-      90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)
-    )
-    0 0 / var(--bg-size) 100%;
+  background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 /
+    var(--bg-size) 100%;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
