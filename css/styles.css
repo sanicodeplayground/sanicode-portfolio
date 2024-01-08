@@ -31,9 +31,9 @@
   --background-light: #08070b;
 
   /* Dark color theme variables */
-  --background-dark: #08070b;
+  --background-dark: #1b262c;
   --background-dark-500: #353232;
-  --background-header: rgba(0, 0, 0, 0.9);
+  --background-header: rgba(0, 0, 0, 0.2);
   --background-dark-700: rgba(53, 59, 65, 0.9);
   --background-dark-900: rgba(53, 59, 65, 0.3);
   --text-light: #c7c7c7;
@@ -62,6 +62,7 @@ body {
   font-family: var(--font-family-text);
   min-height: 100vh;
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 img {
   max-width: 100%;
@@ -194,7 +195,7 @@ main {
   font-size: clamp(4rem, 25vmin, 1rem);
   line-height: 1;
   margin: 1rem 0;
-  --color-one: hsl(15 90% 55%);
+  --color-one: hsl(258, 90%, 55%);
   --color-two: hsl(40 95% 55%);
   --bg-size: 400%;
   background: linear-gradient(
@@ -207,7 +208,7 @@ main {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: move-bg 8s infinite linear;
+  animation: move-bg 20s infinite linear;
 }
 @keyframes move-bg {
   to {
@@ -501,6 +502,7 @@ textarea {
 }
 .footer p {
   color: var(--text-light);
+  font-size: 0.9rem;
 }
 
 /* Skills and Tools  Grid */
