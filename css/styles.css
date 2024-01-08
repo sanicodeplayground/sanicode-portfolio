@@ -197,8 +197,13 @@ main {
   --color-one: hsl(15 90% 55%);
   --color-two: hsl(40 95% 55%);
   --bg-size: 400%;
-  background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 /
-    var(--bg-size) 100%;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -432,21 +437,27 @@ main {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 1.5rem 0 0 0;
+  gap: 0.5rem;
+  margin: 1rem auto;
   padding: 0;
   font-weight: 400;
 }
 .item-tech li {
-  margin: 0.5rem 0.2rem;
   color: var(--text-highlight);
   background-color: rgb(255 255 255 / 10%);
-  border-radius: 50rem;
+  border-radius: 0.5rem;
   padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item-tech li:first-of-type {
   margin-left: 0;
 }
-
+.item-tech li img {
+  width: 24px;
+  margin-right: 0.4rem;
+}
 /* Contact Section */
 form {
   display: flex;
