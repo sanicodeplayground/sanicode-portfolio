@@ -37,6 +37,7 @@
   --background-dark-700: rgba(53, 59, 65, 0.9);
   --background-dark-900: rgba(53, 59, 65, 0.3);
   --text-light: #c7c7c7;
+  --text-light-headers: #ffffff;
   --text-highlight: #abab98;
 
   /* Neutral color variables */
@@ -62,7 +63,6 @@ body {
   font-family: var(--font-family-text);
   min-height: 100vh;
   scroll-behavior: smooth;
-  font-size: 18px;
 }
 img {
   max-width: 100%;
@@ -88,6 +88,8 @@ h2 {
 }
 h3 {
   font-size: 2rem;
+  color: var(--text-light-headers);
+  letter-spacing: 1px;
 }
 h4 {
   font-size: 1.8rem;
@@ -95,7 +97,7 @@ h4 {
 
 /* Paragraphs and links */
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   margin: 0.5rem 0;
 }
@@ -113,14 +115,7 @@ header {
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 100%;
-  min-height: 75px;
-  position: relative;
-  z-index: 999;
-  top: 0;
-  padding: 0 1rem;
-  background-color: var(--background-header);
-  border-bottom: 1px solid var(--background-dark);
+  padding: 1rem 7rem;
 }
 header li {
   display: flex;
@@ -132,6 +127,9 @@ header li {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.main-menu {
+  padding-right: 1rem;
 }
 .main-menu,
 .social-items {
@@ -154,6 +152,14 @@ header li {
 }
 .main-menu a:hover {
   color: var(--text-hover-and-headings);
+}
+.logo {
+  color: var(--text-light);
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo img {
+  width: 34px;
 }
 
 /* Main Content */
@@ -414,7 +420,7 @@ main {
   transition: var(--transition-smooth);
 }
 .portfolio-item img:hover {
-  scale: 1.05;
+  scale: 1.02;
 }
 .portfolio-item a {
   transition: var(--transition-smooth);
@@ -445,7 +451,7 @@ main {
 }
 .item-tech li {
   color: var(--text-highlight);
-  background-color: rgb(255 255 255 / 10%);
+  background-color: rgba(181, 181, 181, 0.1);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   display: flex;
@@ -456,7 +462,7 @@ main {
   margin-left: 0;
 }
 .item-tech li img {
-  width: 24px;
+  width: 20px;
   margin-right: 0.4rem;
 }
 /* Contact Section */
@@ -582,15 +588,11 @@ textarea {
   h4 {
     font-size: 2rem;
   }
-  header {
-    position: fixed;
-  }
   .navigation {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5rem;
+    justify-content: right;
   }
   .hero-title {
     font-size: clamp(3rem, 25vmin, 5.5rem);
@@ -620,7 +622,7 @@ textarea {
   }
   /* My Photos */
   .grid-photos {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .section {
     margin: 7rem;
